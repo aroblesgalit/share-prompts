@@ -12,7 +12,11 @@ const handler = NextAuth({
 
   },
   async signin({ profile }) {
+    try {
+      
+    } catch (error) {
 
+    }
   }
 });
 
