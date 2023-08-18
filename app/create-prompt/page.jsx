@@ -31,7 +31,7 @@ const CreatePrompt = () => {
       });
 
       if(response.ok) {
-        Router.push('/');
+        router.push('/');
       }
     } catch (error) {
       console.log(error);
@@ -51,4 +51,4 @@ const CreatePrompt = () => {
   )
 }
 
-export default CreatePrompt
+export default CreatePrompt;
