@@ -35,6 +35,13 @@ const Feed = () => {
     setFiltered(newFilteredPosts);
   }
 
+  const handleTagClick = (tag) => {
+    setSearchText(tag);
+
+    let newFilteredPosts = posts.filter(post => post.tag.includes(tag));
+    setFiltered(newFilteredPosts);
+  }
+
   useEffect(() => {
     const fetchPosts = async () => {
       const response = await fetch('/api/prompt');
@@ -61,7 +68,7 @@ const Feed = () => {
 
       <PromptCardList
         data={searchText ? filtered : posts}
-        handleTagClick={() => {}}
+        handleTagClick={handleTagClick}
       />
     </section>
   )
