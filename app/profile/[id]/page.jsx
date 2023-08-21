@@ -25,7 +25,7 @@ const CreatorProfile = () => {
   return (
     <Profile
       name={query.get('name')}
-      desc={`Welcome to ${query.get('name')} personalized profile page`}
+      desc={`Welcome to ${query.get('name')}'s personalized profile page. Explore ${query.get('name')}'s exceptional prompts and be inspired by the power of their imagination`}
       data={posts}
     />
   )
