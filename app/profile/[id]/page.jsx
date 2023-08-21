@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { useParams, useSearchParams } from "next/navigation";
 
-import Profile from '@components/profile';
+import Profile from '@components/Profile';
 
 const CreatorProfile = () => {
   const query = useSearchParams();
